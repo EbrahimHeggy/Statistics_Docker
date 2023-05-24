@@ -21,6 +21,7 @@ jobs:
       
       - name: Build and Push Docker Image
         run: 
+          cd admin
           docker build -t app1  Dockerfile .
           docker tag app1:latest ${{ secrets.DOCKERHUB_USERNAME }}/app2:latest
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/app2:latest
