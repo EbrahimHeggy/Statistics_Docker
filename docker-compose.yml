@@ -3,7 +3,7 @@ services:
   app1:
     tty: true
     stdin_open: true 
-    image: app1
+    image: ebrahimh7/app1
     ports:
       - 8081:8080
     volumes:
@@ -12,9 +12,9 @@ services:
         target: /app/data/batch
     
   app2:
-    image: app2
+    image: ebrahimh7/app2
     depends_on:
-      - app1
+      - ebrahimh7/app1
     ports:
       - 8082:8080
     volumes:
