@@ -20,9 +20,9 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
       
       - name: Build and Push Docker Image
-        run: 
+        run: |
           cd admin
-          docker build -t app1  Dockerfile .
+          docker build -t app1 -f Dockerfile .
           docker tag app1:latest ${{ secrets.DOCKERHUB_USERNAME }}/app2:latest
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/app2:latest
       
