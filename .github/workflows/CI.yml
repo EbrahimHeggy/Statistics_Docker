@@ -23,5 +23,5 @@ jobs:
         distribution: 'adopt'
 
     - name: Build the Java application
-      run: javac -d ./build ./students/Main.java
+      run: javac -d ./build Main.java
       
