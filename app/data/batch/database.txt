@@ -1,0 +1,11 @@
+Ibrahim;5;AI,math
+Mustafa;6;AI,Prog
+Ibrahim;5;AI,math
+Mustafa;6;AI,Prog
+Ahmed;1;AI,math
+Mohemed;2;AI,Prog
+Ibrahim;5;AI,math
+Mustafa;6;AI,Prog
+Ahmed;1;AI,math
+Mohemed;2;AI,Prog
+A;10;Ai
